@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in Goplesk doesn't work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Goplesk version
+      description: Output of `goplesk version`
+      placeholder: goplesk v1.5.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Server OS and CPU
+      placeholder: Ubuntu 24.04, x86_64
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: "`journalctl -u goplesk -n 200`. Remove passwords, keys and license keys first."
+      render: text

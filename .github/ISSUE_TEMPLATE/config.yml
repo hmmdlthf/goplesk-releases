@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Billing and licenses
+    url: https://goplesk.caaqit.com
+    about: Plans, invoices, activation codes and offline licenses are in the customer portal.
+  - name: Report a security problem
+    url: https://github.com/hmmdlthf/goplesk-releases/security/advisories/new
+    about: Please report vulnerabilities privately.
